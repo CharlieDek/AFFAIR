@@ -1,0 +1,265 @@
+/* =============================================================================
+   HTML5 CSS Reset - Eric Meyer
+   ========================================================================== */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent
+}
+
+body{
+  line-height:1;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+  display:block
+}
+
+nav ul{
+  list-style:none
+}
+
+blockquote,q{
+  quotes:none
+}
+
+blockquote:before,blockquote:after,q:before,q:after{
+  content:none
+}
+
+mark{
+  background-color:rgb(255, 0, 0);
+  color:#000;
+  font-style:italic;
+  font-weight:bold
+}
+
+del{
+  text-decoration:line-through
+}
+
+abbr[title],dfn[title]{
+  border-bottom:1px dotted;
+  cursor:help
+}
+
+table{
+  border-collapse:collapse;
+  border-spacing:0
+}
+
+hr{
+  display:block;
+  height:1px;
+  border:0;
+  border-top:1px solid #ccc;
+  margin:1em 0;
+  padding:0
+}
+
+input,select{
+  vertical-align:middle
+}
+
+li{
+  list-style:none
+}
+
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+/* ---- base ---- */
+
+html,body{ 
+	width:100%;
+	height:100%;
+	background:rgba(0, 0, 0, 0);
+}
+
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body{
+  font:normal 75% Arial, Helvetica, sans-serif;
+  background-color: #76b3d6;
+}
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+::selection {
+  background: gold;
+  color: #d70f62;
+}
+
+::-moz-selection {
+  background: gold;
+  color: #d70f62;
+}
+
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  position: fixed;
+  /* z-index: -1; */
+  width: 100%;
+  height: 100%;
+  /* background-image: url('../js/img/ring.png'); */
+  background-color: transparent;
+  background-size: contain;
+  background-position: 50% 50%;
+  /* background-repeat: no-repeat; */
+  background-repeat: repeat;
+  z-index: 0;
+}
+
+#behindParticles {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;  
+  z-index: -2;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+#birdman {
+  font-size: 160px;
+  font-family: 'Bowlby One SC', cursive;
+  line-height: 0.8;
+  color: gold;
+}
+
+#linkSpacing {
+  width: 100%;
+  height: 25px;
+}
+
+.appearing_char {
+  visibility: hidden;
+}
+
+.ticketsLink {
+  font-size: 100px;
+  color: black;
+  /* border: 10px transparent; */
+  text-decoration: none;
+  border: 10px solid black;
+  padding: 5px;
+  font-family: 'Bowlby One SC', cursive;
+}
+
+.ticketsLink:hover {
+  /* background-color: #2162c0; */
+  border: 10px solid red;
+  color: red;
+  background-color: black;
+  /* font-style: italic; */
+  border: 10px solid red;
+}
+
+/* ---- Start reg custom site content elems ----*/
+
+/* consider outlines like https://pudding.cool/2021/03/love-and-ai/ */
+#frontOfParticles {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 60%;
+  transform: translateY(40%);
+  z-index: 1;
+}
+
+#trailerVid {
+  border: 12px solid rgb(26, 26, 26);
+}
+
+
+
+
+/* ---- Start small custom site content elems ---- */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-size: contain;  
+}
+
+.contentLink {
+  font-size: 25px;
+  padding: 5px 25px 5px 25px;
+  line-height: 2;
+  border-radius: 10px;
+  font-family: 'Hina Mincho', serif;
+  color: #135d16;
+  background-color: #000000;
+  -webkit-box-shadow: 0 5px 3px -3px rgb(82, 82, 82);
+  -moz-box-shadow: 0 5px 3px -3px rgb(82, 82, 82);
+  box-shadow: 0 5px 3px -3px rgb(82, 82, 82);
+  text-decoration:none;
+}
+
+.contentLink:hover {
+  background: #8dff55;
+  color: #f76629;
+  -webkit-box-shadow: 0 10px 6px -6px rgb(82, 82, 82);
+  -moz-box-shadow: 0 10px 6px -6px rgb(82, 82, 82);
+  box-shadow: 0 10px 6px -6px rgb(82, 82, 82);
+
+}
+
+th, td {
+  text-align: center;
+  padding: 15px;
+}
+
+.blownUpFont {
+  font-size: 35px;
+}
+
+/* Start mid screen section */
+@media only screen and (max-width: 1050px) {
+  
+}
+/* end mid screen section */
+
+
+/* Start small screen section */
+@media only screen and (max-width: 695px) {
+  
+  #birdman {
+    font-size: 100px;
+    font-family: 'Bowlby One SC', cursive;
+    line-height: 0.8;
+    color: gold;
+  }
+
+  #trailerVid {
+    width: 455px;
+    height: 301px;
+    left: 50%;
+  }
+
+}
+/* end small screen section */
+
+
+/* Start tiny screen section */
+@media only screen and (max-width: 399px) {
+
+}
+/* end tiny screen section */
