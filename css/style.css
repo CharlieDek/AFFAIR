@@ -188,48 +188,8 @@ canvas{
   border: 12px solid rgb(26, 26, 26);
 }
 
-
-
-
 /* ---- Start small custom site content elems ---- */
 
-table {
-  border-collapse: collapse;
-  width: 100%;
-  background-size: contain;  
-}
-
-.contentLink {
-  font-size: 25px;
-  padding: 5px 25px 5px 25px;
-  line-height: 2;
-  border-radius: 10px;
-  font-family: 'Hina Mincho', serif;
-  color: #135d16;
-  background-color: #000000;
-  -webkit-box-shadow: 0 5px 3px -3px rgb(82, 82, 82);
-  -moz-box-shadow: 0 5px 3px -3px rgb(82, 82, 82);
-  box-shadow: 0 5px 3px -3px rgb(82, 82, 82);
-  text-decoration:none;
-}
-
-.contentLink:hover {
-  background: #8dff55;
-  color: #f76629;
-  -webkit-box-shadow: 0 10px 6px -6px rgb(82, 82, 82);
-  -moz-box-shadow: 0 10px 6px -6px rgb(82, 82, 82);
-  box-shadow: 0 10px 6px -6px rgb(82, 82, 82);
-
-}
-
-th, td {
-  text-align: center;
-  padding: 15px;
-}
-
-.blownUpFont {
-  font-size: 35px;
-}
 
 /* Start mid screen section */
 @media only screen and (max-width: 1050px) {
@@ -240,6 +200,9 @@ th, td {
 
 /* Start small screen section */
 @media only screen and (max-width: 695px) {
+  .ticketsLink {
+    font-size: 100px;
+  }
   
   #birdman {
     font-size: 100px;
@@ -249,17 +212,37 @@ th, td {
   }
 
   #trailerVid {
-    width: 455px;
-    height: 301px;
+    width: 440px;
+    height: 275px;
     left: 50%;
   }
+
+
+  .ticketsLink {
+    font-size: 75px;
+  }  
 
 }
 /* end small screen section */
 
-
 /* Start tiny screen section */
-@media only screen and (max-width: 399px) {
+@media only screen and (max-width: 450px) {
+  
+  #birdman {
+    font-size: 100px;
+    font-family: 'Bowlby One SC', cursive;
+    line-height: 0.8;
+    color: gold;
+  }
 
+  #trailerVid {
+    width: 360.5px;
+    height: 240px;
+    left: 50%;
+  }
+
+  .ticketsLink {
+    font-size: 60px;
+  }
 }
 /* end tiny screen section */
