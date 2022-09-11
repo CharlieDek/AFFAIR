@@ -1,3 +1,11 @@
+:root {
+
+  /* main colors */
+  --bird-text: #4d231b;
+  --background: #17151f;
+  --tickets-font-color: #fefefc;
+}
+
 /* =============================================================================
    HTML5 CSS Reset - Eric Meyer
    ========================================================================== */
@@ -89,7 +97,7 @@ html{
 
 body{
   font:normal 75% Arial, Helvetica, sans-serif;
-  background-color: #76b3d6;
+  background-color: var(--background);
 }
 
 canvas{
@@ -140,7 +148,7 @@ canvas{
   font-size: 160px;
   font-family: 'Archivo Black', sans-serif;
   line-height: 0.8;
-  color: gold;
+  color: var(--bird-text);
 }
 
 #linkSpacing {
@@ -154,22 +162,22 @@ canvas{
 
 .ticketsLink {
   font-size: 100px;
-  color: black;
+  color: var(--tickets-font-color);
   /* border: 10px transparent; */
-  background-color: #76b3d6;
+  background-color: var(--background);
   text-decoration: none;
-  border: 10px solid black;
+  border: 10px solid var(--tickets-font-color);
   padding: 5px;
   font-family: 'Archivo Black', sans-serif;
 }
 
 .ticketsLink:hover {
   /* background-color: #2162c0; */
-  border: 10px solid red;
-  color: red;
+  border: 10px solid var(--background);
+  color: var(--background);
   background-color: black;
   /* font-style: italic; */
-  border: 10px solid red;
+  border: 10px solid var(--background);
 }
 
 /* ---- Start reg custom site content elems ----*/
@@ -193,7 +201,29 @@ canvas{
 
 
 /* Start mid screen section */
-@media only screen and (max-width: 1050px) {
+@media only screen and (min-width: 1050px) {
+  .ticketsLink {
+    font-size: 1100px;
+  }
+  
+  #birdman {
+    font-size: 200px;
+    line-height: 0.8;
+  }
+
+  #trailerVid {
+    width: 900px;
+    height: 600px;
+    left: 50%;
+  }
+
+  #frontOfParticles {
+    transform: translateY(10%);
+  }  
+
+  .ticketsLink {
+    font-size: 125px;
+  }  
   
 }
 /* end mid screen section */
@@ -208,7 +238,6 @@ canvas{
   #birdman {
     font-size: 100px;
     line-height: 0.8;
-    color: gold;
   }
 
   #trailerVid {
@@ -231,7 +260,6 @@ canvas{
   #birdman {
     font-size: 100px;
     line-height: 0.8;
-    color: gold;
   }
 
   #trailerVid {
@@ -241,7 +269,7 @@ canvas{
   }
 
   .ticketsLink {
-    font-size: 60px;
+    font-size: 40px;
   }
 }
 /* end tiny screen section */
