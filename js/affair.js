@@ -16,7 +16,6 @@ function showAlphaByAlpha(i) {
     return;
   }
   const currClass = c_CLASSES_TO_SHOW[i];
-  console.log(currClass);
   $(currClass).css('visibility', 'visible');
 	setTimeout(function(){
     showAlphaByAlpha(i+1);
@@ -24,7 +23,6 @@ function showAlphaByAlpha(i) {
 }
 
 function writeCompletionFun(charSpans) {
-  console.log(charSpans);
   $( "#birdman").html(charSpans);
   showAlphaByAlpha(0);
 }

@@ -6,6 +6,14 @@
   --tickets-font-color: #fefefc;
 }
 
+a {
+  cursor: pointer;
+}
+
+center {
+  cursor: pointer;
+}
+
 /* =============================================================================
    HTML5 CSS Reset - Eric Meyer
    ========================================================================== */
@@ -172,12 +180,9 @@ canvas{
 }
 
 .ticketsLink:hover {
-  /* background-color: #2162c0; */
   border: 10px solid var(--background);
   color: var(--background);
-  background-color: black;
-  /* font-style: italic; */
-  border: 10px solid var(--background);
+  background-color: var(--tickets-font-color);
 }
 
 /* ---- Start reg custom site content elems ----*/
